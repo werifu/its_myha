@@ -17,7 +17,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased 'h-[100dvh]'`}
         style={{
           background: `repeating-linear-gradient(
             20deg,
@@ -25,12 +25,10 @@ function RootLayout({ children }: { children: React.ReactNode }) {
             #77BBDD 40px,
             #88CCEE 40px,
             #88CCEE 80px
-          )`
+          )`,
         }}
+        suppressHydrationWarning
       >
-        <div className="p-4">
-          {/* LanguageSelector removed */}
-        </div>
         {children}
       </body>
     </html>

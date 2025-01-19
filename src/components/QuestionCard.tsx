@@ -7,16 +7,12 @@ import AudioPlayer from '@/components/AudioPlayer';
 interface QuestionCardProps {
   question: Question;
   onAnswer: (isCorrect: boolean) => Promise<void>;
-  questionId: number;
-  questionNum: number;
   showFeedback: boolean;
 }
 
 export default function QuestionCard({
   question,
   onAnswer,
-  questionId,
-  questionNum,
   showFeedback,
 }: QuestionCardProps) {
   const [selected, setSelected] = useState<string | null>(null);
@@ -33,9 +29,6 @@ export default function QuestionCard({
   return (
     <div className="w-full max-w-3xl">
       <div className="mb-5">
-        <p>
-          {questionId}/{questionNum}
-        </p>
         <AudioPlayer character={question.character} src={question.audio} ref={audioRef} />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-sm md:max-w-none mx-auto px-10 md:px-0">

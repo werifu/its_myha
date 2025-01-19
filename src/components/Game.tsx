@@ -1,24 +1,26 @@
 "use client";
 import { useState } from 'react';
 import QuestionCard from '@/components/QuestionCard';
-import { generateQuestions, getAllAssets } from '@/data/questions';
+import { allAssets, generateQuestions } from '@/data/questions';
+import { GameSettings } from '@/utils/settings';
 
 interface GameProps {
   onEnd: (score: number, questionNum: number) => void;
+  settings: GameSettings;
 }
 
-export default function Game({ onEnd }: GameProps) {
+export default function Game({ onEnd, settings }: GameProps) {
+  const { characters, questionNum } = settings;
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<number[]>([]);
   const [showFeedback, setShowFeedback] = useState(false);
 
-  const questionNum = 4;
   const [selectedQuestions] = useState(() => {
     // Only generate questions on the client-side to avoid hydration mismatch
     if (typeof window === 'undefined') {
       return Array(questionNum).fill(null);
     }
-    return generateQuestions(getAllAssets(), questionNum);
+    return generateQuestions(allAssets, questionNum, { characters });
   });
 
   const handleAnswer = async (correct: boolean) => {
@@ -40,18 +42,16 @@ export default function Game({ onEnd }: GameProps) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
-      <h2 className="mb-4">第{currentQuestionIndex + 1}题</h2>
-
       <>
+        <div className="mb-8 text-3xl text-white text-shadow font-bold">
+          {currentQuestionIndex + 1} / {questionNum}
+        </div>
         <QuestionCard
           question={selectedQuestions[currentQuestionIndex]}
           onAnswer={handleAnswer}
-          questionId={currentQuestionIndex + 1}
-          questionNum={questionNum}
           showFeedback={showFeedback}
         />
       </>
-
     </div>
   );
 }

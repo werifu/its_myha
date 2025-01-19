@@ -20,6 +20,7 @@ export interface Asset {
   audio: string,
   image: string,
 }
+export const allAssets = getAllAssets();
 
 export function getAllAssets() {
   const allAssets: Asset[][] = [];

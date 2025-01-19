@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
-
+// @ts-expect-error: The file doesn't include type declarations
+import textShadow from "@designbycode/tailwindcss-text-shadow";
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,5 +15,7 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    textShadow,
+  ],
 } satisfies Config;
