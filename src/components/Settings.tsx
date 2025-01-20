@@ -94,11 +94,11 @@ export default function Settings() {
                 [&::-webkit-slider-thumb]:w-8
                 [&::-webkit-slider-thumb]:appearance-none 
                 [&::-webkit-slider-thumb]:bg-[#3388BB] 
-                [&::-webkit-slider-thumb]:rounded-none 
+                [&::-webkit-slider-thumb]:rounded-md 
                 [&::-webkit-slider-thumb]:border 
                 [&::-webkit-slider-thumb]:border-gray-300 
                 [&::-webkit-slider-thumb]:shadow
-                [&::-webkit-slider-thumb]:rounded-lg
+                [&::-webkit-slider-thumb]:rounded-md
                 [&::-webkit-slider-thumb]:outline
                 [&::-webkit-slider-thumb]:outline-white
                 [&::-webkit-slider-thumb]:outline-2
