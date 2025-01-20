@@ -30,7 +30,6 @@ const CharacterCheckbox: React.FC<CharacterCheckboxProps> = ({ character, isSele
   };
 
   const assetUrl = `${character}-shout-border.png`;
-  console.log(assetUrl);
   return (
     <label className="cursor-pointer">
       <input

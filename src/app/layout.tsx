@@ -1,5 +1,8 @@
 "use client"
 
+import React, { useEffect } from 'react';
+import { I18nextProvider } from 'react-i18next';
+import i18n from '../i18n';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 
@@ -14,8 +17,17 @@ const geistMono = Geist_Mono({
 });
 
 function RootLayout({ children }: { children: React.ReactNode }) {
+  useEffect(() => {
+    if (typeof window !== 'undefined') { // Ensure this runs only on the client
+      const savedLanguage = localStorage.getItem('language');
+      if (savedLanguage && i18n.language !== savedLanguage) {
+        i18n.changeLanguage(savedLanguage);
+      }
+    }
+  }, []);
+
   return (
-    <html suppressHydrationWarning>
+    <html lang={i18n.language} suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased 'h-[100dvh]'`}
         style={{
@@ -29,7 +41,9 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         }}
         suppressHydrationWarning
       >
-        {children}
+        <I18nextProvider i18n={i18n}>
+          {children}
+        </I18nextProvider>
       </body>
     </html>
   );

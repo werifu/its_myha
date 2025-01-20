@@ -1,0 +1,28 @@
+{
+  "start_game": "ゲームスタート",
+  "replay": "リプレイ",
+  "select_language": "言語選択",
+  "game_title": "It's MyHA??!!!",
+  "game_settings": "ゲーム設定",
+  "about": "概要",
+  "inspiration": "【Radio企画】MyGO!!!!!の「迷子集会」#109 より着想",
+  "mygo_center_109": "https://www.youtube.com/watch?v=r0nQ7htFENA",
+  "lack_ha_img": "/lack_ha_jp.png",
+  "disclaimer": "本ゲームはBanG Dream Projectのファン制作作品であり、ブシロードとは一切関係ありません。",
+  "return_menu": "メニューに戻る",
+  "characters": "マイゴーズ",
+  "number_of_questions": "問題数",
+  "default": "デフォルト",
+  "save": "保存",
+  "results": {
+    "score": "スコア",
+    "perfect": "このゲームもうやめろよ、Rikki",
+    "excellent": "\"私を見つけてくれたのはあなただけですよ\"",
+    "good": "\"はぁ？\"",
+    "okay": "\"伝わるといいね\"",
+    "poor": "\"こいつ何も分かってない\"",
+    "miss": "\"最悪\"",
+    "replay": "もう一度",
+    "menu": "戻る"
+  }
+} 

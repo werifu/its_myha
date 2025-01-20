@@ -6,9 +6,11 @@ import { useRouter } from 'next/navigation';
 import { Character } from '@/data/questions';
 import { assets } from '@/data/assets';
 import CharacterCheckbox from './CharacterCheckbox';
+import { useTranslation } from 'react-i18next';
 
 export default function Settings() {
   const router = useRouter();
+  const { t } = useTranslation();
   const [characters, setCharacters] = useState<Character[]>([]);
   const [questionNum, setQuestionNum] = useState<number>(defaultSettings.questionNum);
   const [maxQuestions, setMaxQuestions] = useState<number>(0);
@@ -63,7 +65,7 @@ export default function Settings() {
     <div className="flex flex-col items-center justify-center min-h-screen p-8" suppressHydrationWarning>
       <form onSubmit={handleSubmit} className="w-full max-w-md">
         <div className="mb-10">
-          <h2 className="text-xl mb-10 text-white text-shadow font-bold">迷子们:</h2>
+          <h2 className="text-xl mb-10 text-white text-shadow font-bold">{t('characters')}</h2>
           <div className="flex gap-8 justify-center">
             {availableCharacters.map(character => (
               <CharacterCheckbox
@@ -76,7 +78,9 @@ export default function Settings() {
           </div>
         </div>
         <div className="mb-10">
-          <label className="block text-xl mb-6 text-white text-shadow font-bold">问题数量: {questionNum}</label>
+          <label className="block text-xl mb-6 text-white text-shadow font-bold">
+            {t('number_of_questions')}: {questionNum}
+          </label>
           <div className="flex items-center gap-2">
             <span className="text-sm text-white/80 text-shadow">1</span>
             <input
@@ -114,7 +118,7 @@ export default function Settings() {
               font-bold 
               text-center"
           >
-            默认
+            {t('default')}
           </button>
           <button
             type="submit"
@@ -125,7 +129,7 @@ export default function Settings() {
               font-bold 
               text-center"
           >
-            保存
+            {t('save')}
           </button>
         </div>
       </form>

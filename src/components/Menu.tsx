@@ -3,6 +3,9 @@
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import Footer from '@/components/Footer';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from '@/components/LanguageSelector';
+import { useEffect } from 'react';
 
 interface MenuProps {
   onStart: () => void;
@@ -10,38 +13,56 @@ interface MenuProps {
 
 export default function Menu({ onStart }: MenuProps) {
   const router = useRouter();
+  const { t, i18n } = useTranslation();
 
   const navigateToAbout = () => {
     router.push('/about');
   };
 
+  useEffect(() => {
+    const handleLanguageChange = () => {
+      // Language has changed, you can perform any necessary updates here
+      console.log('Language changed to:', i18n.language);
+    };
+
+    i18n.on('languageChanged', handleLanguageChange);
+
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
+
   return (
     <>
-      <Image src="/its_myha.png" alt="问答游戏" width={400} height={200} className="mb-0 drop-shadow-md" />
+      <Image src="/its_myha.png" alt={t('game_title')} width={400} height={200} className="mb-0 drop-shadow-md" />
       <button
         onClick={onStart}
         className="text-3xl px-6 py-3 text-white hover:scale-125 transition-transform text-shadow font-bold"
+        suppressHydrationWarning
       >
-        开始游戏
+        {t('start_game')}
       </button>
 
       <div className="mt-4">
         <button
           onClick={() => router.push('/settings')}
           className="text-3xl px-6 py-3 text-white hover:scale-125 transition-transform text-shadow font-bold"
+          suppressHydrationWarning
         >
-          游戏设定
+          {t('game_settings')}
         </button>
       </div>
       <div className="mt-4">
         <button
           onClick={navigateToAbout}
           className="text-3xl px-6 py-3 text-white hover:scale-125 transition-transform text-shadow font-bold"
+          suppressHydrationWarning
         >
-          关于
+          {t('about')}
         </button>
       </div>
+      <LanguageSelector />
       <Footer />
     </>
   );
-} 
+}

@@ -1,8 +1,28 @@
 {
   "start_game": "Start Game",
   "replay": "Replay",
-  "correct": "Correct!",
-  "incorrect": "Incorrect!",
-  "your_score": "Your Score",
-  "select_language": "Select Language"
+  "select_language": "Select Language",
+  "game_title": "It's MyHA??!!!",
+  "game_settings": "Game Settings",
+  "about": "About",
+  "inspiration": "Inspired by 【Radio企划】MyGO!!!!!の「迷子集会」#109",
+  "mygo_center_109": "https://www.youtube.com/watch?v=r0nQ7htFENA",
+  "lack_ha_img": "/lack_ha.jpg",
+  "disclaimer": "This game is a fan-made work of BanG Dream Project and has no official affiliation with Bushiroad.",
+  "return_menu": "Return to Menu",
+  "characters": "Mygos",
+  "number_of_questions": "Number of Questions",
+  "default": "Default",
+  "save": "Save",
+  "results": {
+    "score": "Score",
+    "perfect": "Stop playing, Rikki",
+    "excellent": "\"You're the only one who found me.\"",
+    "good": "\"Ha?\"",
+    "okay": "\"I hope your feelings get through.\"",
+    "poor": "\"Whoever this is doesn't know anything!\"",
+    "miss": "\"You scum\"",
+    "replay": "Play Again",
+    "menu": "Return to Menu"
+  }
 }
