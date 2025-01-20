@@ -8,7 +8,7 @@
   "inspiration": "Inspired by 【Radio】MyGO!!!!!'s Maigo Center #109",
   "mygo_center_109": "https://www.youtube.com/watch?v=r0nQ7htFENA",
   "lack_ha_img": "/lack_ha.jpg",
-  "disclaimer": "This game is a fan-made work of BanG Dream Project and has no official affiliation with Bushiroad.",
+  "disclaimer": "This game is a fan-made work of BanG Dream. It has no affiliation with the official project. All rights belong to the official project. Resources must not be used for profit.",
   "return_menu": "Return to Menu",
   "characters": "Mygos",
   "number_of_questions": "Number of Questions",
@@ -24,5 +24,8 @@
     "miss": "\"You scum\"",
     "replay": "Play Again",
     "menu": "Return to Menu"
-  }
+  },
+  "gallery": "Gallery",
+  "click_to_play_sound": "Click the images and enjoy",
+  "game_instruction": "Game Instruction: Click Anon/Taki above the options, guess and choose"
 }

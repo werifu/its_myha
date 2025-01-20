@@ -8,7 +8,7 @@
   "inspiration": "灵感来自【Radio企划】MyGO!!!!!の「迷子集会」#109",
   "mygo_center_109": "https://www.bilibili.com/video/BV1DBcie2Er9",
   "lack_ha_img": "/lack_ha.jpg",
-  "disclaimer": "本游戏是 BanG Dream 粉丝创作的同人作品，与官方无任何联系。",
+  "disclaimer": "本游戏是 BanG Dream 粉丝创作的同人作品，与官方无任何联系，版权归官方所有，资源请勿盈利。",
   "return_menu": "返回主页",
   "characters": "迷子们",
   "number_of_questions": "问题数量",
@@ -19,10 +19,13 @@
     "perfect": "别玩了 Rikki",
     "excellent": "\"找到我的人只有你一个\"",
     "good": "\"哈？\"",
-    "okay": "\"希望你能够传达到\"", 
+    "okay": "\"希望你能够传达到\"",
     "poor": "\"这家伙什么都不懂\"",
     "miss": "\"最恶\"",
     "replay": "重玩",
     "menu": "返回主页"
-  }
+  },
+  "gallery": "图鉴",
+  "click_to_play_sound": "点击图片享受",
+  "game_instruction": "游戏指南：点击大头播放\"哈？\"并猜测来源场景"
 }

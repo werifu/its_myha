@@ -19,6 +19,10 @@ export default function Menu({ onStart }: MenuProps) {
     router.push('/about');
   };
 
+  const navigateToGallery = () => {
+    router.push('/gallery');
+  };
+
   useEffect(() => {
     const handleLanguageChange = () => {
       // Language has changed, you can perform any necessary updates here
@@ -61,6 +65,16 @@ export default function Menu({ onStart }: MenuProps) {
           {t('about')}
         </button>
       </div>
+      <div className="mt-4">
+        <button
+          onClick={navigateToGallery}
+          className="text-3xl px-6 py-3 text-white hover:scale-125 transition-transform text-shadow font-bold"
+          suppressHydrationWarning
+        >
+          {t('gallery')}
+        </button>
+      </div>
+      <div className='mb-4'></div>
       <LanguageSelector />
       <Footer />
     </>

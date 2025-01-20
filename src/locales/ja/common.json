@@ -8,7 +8,7 @@
   "inspiration": "【Radio】MyGO!!!!!'s Maigo Center #109 より着想",
   "mygo_center_109": "https://www.youtube.com/watch?v=r0nQ7htFENA",
   "lack_ha_img": "/lack_ha_jp.png",
-  "disclaimer": "本ゲームはBanG Dream Projectの同人作品であり、ブシロードとは一切関係ありません。",
+  "disclaimer": "本ゲームはBanG Dream ファンによる同人作品であり、公式とは一切関係なく、著作権は公式に帰属し、リソースの営利目的での使用を禁じます。",
   "return_menu": "メニューに戻る",
   "characters": "マイゴーズ",
   "number_of_questions": "問題数",
@@ -24,5 +24,8 @@
     "miss": "\"最悪\"",
     "replay": "もう一度",
     "menu": "戻る"
-  }
+  },
+  "gallery": "図鑑",
+  "click_to_play_sound": "画像をクリックしてお楽しみください",
+  "game_instruction": "ゲームガイド：オプションの上にあるAnon/Takiをクリックし、推測して選択してください"
 } 
