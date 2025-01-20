@@ -4,7 +4,7 @@ This game is a fan-made work of BanG Dream It's MyGO & Ave Mujica and has no off
 
 ## TODO
 
-- [ ] i18n
+- [x] i18n: zh-cn, en, ja
 - [x] All HA in MyGO
 - [ ] Gallery system
 - [ ] CDN for resources
