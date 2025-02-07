@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@designbycode/tailwindcss-text-shadow": "^2.2.1",
+    "html2canvas": "^1.4.1",
     "i18next": "^24.2.1",
     "next": "15.1.5",
     "react": "^19.0.0",

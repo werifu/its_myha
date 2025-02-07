@@ -2,6 +2,7 @@
 
 import Footer from "./Footer";
 import { useTranslation } from "react-i18next";
+import ShareSection from "./ShareSection";
 
 interface ResultsProps {
   score: number;
@@ -18,7 +19,6 @@ function getResultMessage(score: number, total: number, t: (key: string) => stri
   if (score >= total * 0.2) return t('results.poor');
   return t('results.miss');
 }
-
 export default function Results({ score, total, onReplay, onReturn }: ResultsProps) {
   const { t } = useTranslation();
 
@@ -44,6 +44,7 @@ export default function Results({ score, total, onReplay, onReturn }: ResultsPro
           {t('results.menu')}
         </button>
       </div>
+      <ShareSection />
       <Footer />
     </div>
   );

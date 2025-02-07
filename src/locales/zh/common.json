@@ -23,7 +23,12 @@
     "poor": "\"这家伙什么都不懂\"",
     "miss": "\"最恶\"",
     "replay": "重玩",
-    "menu": "返回主页"
+    "menu": "返回主页",
+    "copy_link": "复制链接",
+    "link_copied": "链接已复制到剪贴板",
+    "copy_failed": "复制失败，请长按手动复制",
+    "share_text": "立希和爱音“哈”了多少下？It's MyHA??!!!",
+    "play_link": "游玩链接"
   },
   "gallery": "图鉴",
   "click_to_play_sound": "点击图片享受",

@@ -23,7 +23,12 @@
     "poor": "\"Whoever this is doesn't know anything!\"",
     "miss": "\"You scum\"",
     "replay": "Play Again",
-    "menu": "Return to Menu"
+    "menu": "Return to Menu",
+    "copy_link": "Copy Text",
+    "link_copied": "Text copied to clipboard",
+    "copy_failed": "Copy failed, please long-press to copy manually",
+    "share_text": "Taki and Anon's \"Ha\" Counter? It's MyHA??!!!",
+    "play_link": "Link"
   },
   "gallery": "Gallery",
   "click_to_play_sound": "Click the images and enjoy",

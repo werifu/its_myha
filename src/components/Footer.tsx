@@ -6,9 +6,9 @@ export default function Footer() {
           href="https://github.com/werifu/its_myha"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-white transition-colors"
+          className="text-white hover:text-white/80 transition-colors"
         >
-          GitHub Repository
+          visit GitHub Repository
         </a>
         <div>This is a fan-made work of BanG Dream Project. </div>
       </div>
