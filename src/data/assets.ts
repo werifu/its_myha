@@ -157,6 +157,10 @@ export const assets = {
     {
       "audio": "/assets/taki-31.MP3",
       "image": "/assets/taki-31.jpg"
+    },
+    {
+      "audio": "/assets/taki-32.MP3",
+      "image": "/assets/taki-32.jpg"
     }
   ]
 }
